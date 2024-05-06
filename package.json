@@ -1,0 +1,19 @@
+{
+  "name": "liron-portfolio",
+  "version": "1.0.0",
+  "description": "liron guez's portfolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnogJani/liron-portfolio.git"
+  },
+  "author": "Anog Jani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnogJani/liron-portfolio/issues"
+  },
+  "homepage": "https://github.com/AnogJani/liron-portfolio#readme"
+}
