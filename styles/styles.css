@@ -110,7 +110,7 @@ nav {
 .navigation_container {
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
-    gap: 20px;
+    gap: 10px;
     padding: 7px;
     border-radius: 29px;
     border: 1px solid rgba(255, 255, 255, 0.25) !important;
@@ -118,7 +118,7 @@ nav {
 }
 
 .navigation {
-    padding: 12px 20px;
+    padding: 9px 20px;
     border-radius: 36px;
     text-align: center;
     transition: 0.4s cubic-bezier(.165, .84, .44, 1);
@@ -135,7 +135,7 @@ nav {
 }
 
 .nav_link {
-    padding: 13px 17px;
+    padding: 9px 20px;
     border-radius: 36px;
     transition: 0.4s cubic-bezier(.165, .84, .44, 1);
 }
