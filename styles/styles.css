@@ -11,14 +11,41 @@
     font-style: normal;
 }
 
-html {
+body {
     background-color: var(--background);
 }
 
-body {
+.background_overlays, .background_overlays > * {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#background_dots {
     background: radial-gradient(circle, var(--background) 0%, var(--background) 94%, rgba(168, 168, 168, 0.1) 100%);
     background-size: 30px 30px;
 }
+
+#background_dots_top {
+    background: radial-gradient(circle, var(--background) 0%, var(--background) 94%, rgba(148, 148, 148, 0.637) 100%);
+    background-size: 30px 30px;
+    opacity: 0;
+    transition: 0.4s cubic-bezier(.165, .84, .44, 1);
+}
+
+body:hover #background_dots_top {
+    opacity: 1;
+}
+
+.noise_texture {
+    mix-blend-mode: overlay;
+    opacity: 0.3;
+    background-image: url("../assets/noise-texture.png");
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+/*Nav Bar*/
 
 nav {
     z-index: 10;
@@ -40,8 +67,11 @@ nav {
     justify-content: space-between;
 }
 
-main {
+/*Main*/
 
+main {
+    position: relative;
+    z-index: 2;
 }
 
 #hero {
@@ -51,17 +81,23 @@ main {
     align-items: center;
 }
 
-.dot-icon {
+.dot_icon {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--accent);
     box-shadow: 0 0 20px var(--accent);
+    transition: 0.4s cubic-bezier(.165, .84, .44, 1);
 }
 
-.dot-icon:hover {
+.dot_icon:hover {
     background-color: var(--text);
     box-shadow: 0 0 20px var(--text);
+}
+
+.dot_icon.large {
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -69,10 +105,6 @@ main {
 
 ::-webkit-scrollbar {
     width: 10px;
-}
-
-::-webkit-scrollbar:hover {
-    
 }
 
 ::-webkit-scrollbar-track {
