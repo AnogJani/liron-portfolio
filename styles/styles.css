@@ -27,7 +27,7 @@ body {
 }
 
 #background_dots_top {
-    background: radial-gradient(circle, var(--background) 0%, var(--background) 94%, rgba(148, 148, 148, 0.637) 100%);
+    background: radial-gradient(circle, var(--background) 0%, var(--background) 94%, rgba(148, 148, 148, 0.514) 100%);
     background-size: 30px 30px;
     opacity: 0;
     transition: 0.4s cubic-bezier(.165, .84, .44, 1);
