@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2b62ec8bb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/reusable-components.css">
     <script src="scripts/utils.js" defer></script>
     <script src="scripts/script.js" defer></script>
     <title>Liron Guez</title>
@@ -21,9 +23,23 @@
     </div>
     <nav>
         <div class="nav_content">
-            <div>לוגו</div>
-            <div>ניווט ראשי</div>
-            <div>לינקים</div>
+            <div class="nav_logo">
+                <img class="logo" src="assets/logo.png" alt="logo">
+                <span class="logo_text">לירון גז</span>
+            </div>
+            <div class="nav_main">
+                <div class="navigation_container glass">
+                    <a class="navigation glass" href="#"><span>על עצמי</span></a>
+                    <div class="seperator"></div>
+                    <a class="navigation glass" href="#"><span>עבודות</span></a>
+                </div>
+            </div>
+            <div class="nav_links">
+                <div class="nav_links_container">
+                    <a class="nav_link" href="#"><span>קורות חיים</span><i class="fa fa-link"></i></a>
+                    <a class="nav_link" href="#"><span>LinkedIn</span><i class="fa fa-link"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
