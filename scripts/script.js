@@ -1,6 +1,7 @@
 
 
 //Background
+if (!isMobile()) {
 window.addEventListener("mousemove",(e) => {
     let x = e.clientX;
     let y = e.clientY;
@@ -8,3 +9,4 @@ window.addEventListener("mousemove",(e) => {
     let hover_dots = document.getElementById("background_dots_top");
     hover_dots.style = `mask-image: radial-gradient(${effect_radius}px at ${x}px ${y}px, black 0%, transparent 100%);`;
 });
+}
